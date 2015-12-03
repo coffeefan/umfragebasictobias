@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="author" content="Tobias"/>
+    <title>Umfrage</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code {
+        white-space: pre;
+    }</style>
+    <link rel="stylesheet" href="reveal.js/css/theme/moon.css"/>
+    <script>
+        function saveAnwser(){
+            Reveal.right();
+        }
+
+        function checkSetPassword(){
+            alert(document.getElementById("password").value);
+            Reveal.right();
+        }
+
+    </script>
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="reveal.js/css/style.css"/>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h1 class="title">Umfrage </h1>
+
+            <h2 class="author">Tobias</h2>
+        </section>
+
+        <section>
+            <h3 >Password</h3>
+            <p><input name="password" id="password" ></p>
+            <button onclick="checkSetPassword()">Login</button>
+        </section>
+
+
+            <section>
+                <h2>Frage 1</h2>
+                Wie ist die Frage 1?
+                <p>
+                    <button onclick="saveAnwser()">Button 1</button>
+                    <button onclick="saveAnwser()">Button 2</button>
+                </p>
+                <P>
+                    <button onclick="saveAnwser()">Button 3</button>
+                    <button onclick="saveAnwser()">Button 4</button>
+                </P>
+            </section>
+            <section>
+                <h2>Frage 2</h2>
+                Wie ist die Frage 2?
+                <p>
+                    <button onclick="saveAnwser()">Button 1</button>
+                    <button onclick="saveAnwser()">Button 2</button>
+                </p>
+                <P>
+                    <button onclick="saveAnwser()">Button 3</button>
+                    <button onclick="saveAnwser()">Button 4</button>
+                </P>
+            </section>
+            <section>
+                <h2>Frage 3</h2>
+                Wie ist die Frage 3?
+                <p>
+                    <button onclick="saveAnwser()">Button 1</button>
+                    <button onclick="saveAnwser()">Button 2</button>
+                </p>
+                <P>
+                    <button onclick="saveAnwser()">Button 3</button>
+                    <button onclick="saveAnwser()">Button 4</button>
+                </P>
+            </section>
+            <section>
+                <h2>Frage 4</h2>
+                Wie ist die Frage 4?
+                <p>
+                    <button onclick="saveAnwser()">Button 1</button>
+                    <button onclick="saveAnwser()">Button 2</button>
+                </p>
+                <P>
+                    <button onclick="saveAnwser()">Button 3</button>
+                    <button onclick="saveAnwser()">Button 4</button>
+                </P>
+            </section>
+            <section >
+                <h2>Frage 5</h2>
+                Wie ist die Frage 5?
+                <p>
+                    <button onclick="saveAnwser()">Button 1</button>
+                    <button onclick="saveAnwser()">Button 2</button>
+                </p>
+                <P>
+                    <button onclick="saveAnwser()">Button 3</button>
+                    <button onclick="saveAnwser()">Button 4</button>
+                </P>
+            </section>
+            <section >
+                <h2>Abschluss</h2>
+                <p>
+                    <button onclick="saveAnweserToServer()">Antworten speichern</button>
+                </p>
+
+            </section>
+
+    </div>
+</div>
+
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {
+                src: 'reveal.js/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+            {
+                src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+</script>
+</body>
+</html>
